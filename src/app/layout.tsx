@@ -36,10 +36,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} ${poppins.variable}  ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${poppins.className}  ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-        <main className="max-w-6xl mx-auto w-full  min-h-screen">{children}</main>
+        <main>{children}</main>
        <Footer />
       </body>
     </html>
