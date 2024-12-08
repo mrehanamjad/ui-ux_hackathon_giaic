@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <Container>
-    <footer className="max-w-6xl mx-auto w-full py-12 px-4 md:px-8">
+    <footer className="w-full py-12 px-4 md:px-8">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
         {/* Contact Column */}
         <div>
@@ -66,7 +66,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Horizontal Line and Copyright */}
       <div className="mt-8 pt-4 border-t ">
         <p className="text text-black">
           © 2022 Meubel House. All rights reserved

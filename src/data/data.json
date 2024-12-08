@@ -50,7 +50,11 @@
       "price": 20000.0,
       "imgSrc": "/products/Mask group (10).png"
     },
-    { "name": "SJP 0825", "price": 200000.0, "imgSrc": "/products/Mask group (11).png" },
+    {
+      "name": "SJP 0825",
+      "price": 200000.0,
+      "imgSrc": "/products/Mask group (11).png"
+    },
     {
       "name": "Bella chair and table",
       "price": 100000.0,
