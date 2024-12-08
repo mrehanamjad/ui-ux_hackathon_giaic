@@ -13,7 +13,7 @@ function Hero() {
             <Button variant={'fBtn1'} className="mt-6 w-fit">Shop Now</Button>
         </div>
         <Image 
-        src={'/hero.png'} 
+        src={'/Rocket single seater 1.png'} 
         alt={'white sofa chair'}
         width={1000}
         height={1000}
