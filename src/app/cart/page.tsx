@@ -11,11 +11,11 @@ function CartPage() {
     <div className="w-full">
       <PageHero name="Cart" />
       <Container className="p-9">
-        <div className="max-w-6xl w-full mx-auto min-h-96 grid grid-cols-3">
-          <div className="col-span-2 h-full w-full">
+        <div className="max-w-6xl w-full mx-auto min-h-96 grid grid-cols-1 lg:grid-cols-3">
+          <div className="lg:col-span-2 col-span-1 h-full w-full">
             <CartTable />
           </div>
-          <div className="col-span-1 bg-[#FFF9E5] h-full flex justify-center items-center flex-col gap-9 w-full">
+          <div className="col-span-1 bg-[#FFF9E5] h-full flex justify-center items-center flex-col gap-9 max-lg:py-5 max-lg:my-6 w-full">
             <h2 className="font-semibold text-3xl mb-4">Cart Totals</h2>
             <div className="grid grid-cols-3  gap-6">
                 <span className="font-medium col-span-1">Subtotal</span><span className="text-[#9F9F9F] col-span-2">Rs. 250,000.00</span>
@@ -46,8 +46,8 @@ export const CartTable = () => {
   ];
 
   return (
-    <div className="container mx-auto p-4">
-      <table className="w-full border-collapse">
+    <div className="container mx-auto p-4 max-sm:overflow-x-scroll">
+      <table className="w-full border-collapse ">
         <thead className="mb-4">
           <tr className="bg-[#FFF9E5] font-medium">
             <th className="p-3 text-left">Image</th>
