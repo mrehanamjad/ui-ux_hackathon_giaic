@@ -47,7 +47,7 @@ const Header = () => {
       </div>
       {/* Right-side Icons */}
       <div className="flex items-center ml-auto md:mr-4 w-[15.125rem] justify-between p-2">
-      <span id="user" className="cursor-pointer">
+      <Link href={'/my-account'} id="user" className="cursor-pointer">
           <svg
             width="28"
             height="28"
@@ -60,7 +60,7 @@ const Header = () => {
               fill="black"
             />
           </svg>
-        </span>
+        </Link>
         <span id="search" className="cursor-pointer py-1">
           <svg
             width="28"
