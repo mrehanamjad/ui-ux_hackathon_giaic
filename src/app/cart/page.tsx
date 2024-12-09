@@ -32,8 +32,7 @@ function CartPage() {
 
 export default CartPage;
 
-export const CartTable = () => {
-  // Sample cart items (you would typically get this from state or props)
+const CartTable = () => {
 
   const cartItems = [
     {
