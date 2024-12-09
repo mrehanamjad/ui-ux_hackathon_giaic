@@ -7,7 +7,7 @@ interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement
 
 const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
   ({ label, className, id, ...props }, ref) => {
-    const uniqueId = id || React.useId();
+    const uniqueId = id || Date.now() + '-' + Math.random();
 
     return (
       <div>

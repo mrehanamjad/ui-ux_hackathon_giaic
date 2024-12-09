@@ -3,8 +3,6 @@ import React from "react";
 import Container from "@/components/Container";
 import DeliveryServices from "@/components/DeliveryServices";
 import PageHero from "@/components/PageHero";
-import { useState } from "react";
-import { Trash2 } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
