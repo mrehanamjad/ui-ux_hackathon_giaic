@@ -4,9 +4,11 @@ import { SlidersHorizontal } from 'lucide-react'
 
 function ProductFilterBar() {
   return (
+    <section className=' bg-[#FAF4F4]'>
     <Container>
-    <div className='w-full h-24 flex items-center gap-10 justify-center my-10 bg-[#FAF4F4]'>
-        <div className='flex items-center gap-10'>
+    <div className='max-w-6xl px-2 max-md:flex-col max-md:gap-4 max-md:justify-center w-full h-24 flex items-center gap-14 justify-between my-10'>
+      <div className='flex items-center gap-7'>
+        <div className='flex items-center gap-7'>
 
          <span className='flex items-center text-xl gap-2'><SlidersHorizontal /> Filter</span>
          <span id="grid"> 
@@ -22,11 +24,22 @@ function ProductFilterBar() {
 </span>
 
         </div> 
-        <div className='h-5 w-0.5 bg-black/80'>
+        <div className='h-5 w-0.5 bg-black/80 max-sm:hidden'></div>  {/* vertical line */}
+        <p className='max-sm:hidden'>Showing 1–16 of 32 results</p>
         </div>
-        <p>Showing 1–16 of 32 results</p>
+  
+      <div className="flex items-center justify-center gap-4 text-xl max-md:text-lg max-md:gap-2">
+        <label htmlFor="show">Show</label>
+        <input type="text" value={"16"} id='show' className='text-[#9F9F9F] w-12 h-12 max-md:h-9 text-center' />
+        <label htmlFor="sort">Sort by</label>
+        <input type="text" value={"Default"} id='sort' className='text-[#9F9F9F] w-24 h-12 max-md:h-9 text-center' />
+
+      </div>
+
+
     </div>
     </Container>
+    </section>
   )
 }
 
