@@ -95,7 +95,7 @@ const Header = () => {
             />
           </svg>
         </span>
-        <span id="cart" className="cursor-pointer">
+        <Link href={'/cart'} id="cart" className="cursor-pointer">
           <svg
             width="28"
             height="28"
@@ -108,7 +108,7 @@ const Header = () => {
               fill="black"
             />
           </svg>
-        </span>
+        </Link>
         <button 
         onClick={toggleSidebar}
         className="md:hidden h-full"
