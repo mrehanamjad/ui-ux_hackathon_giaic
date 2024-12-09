@@ -32,7 +32,7 @@ function myAccount() {
                         <h2 className='font-semibold text-4xl mb-3'>SignUp</h2>
                         
                         <Input label='Email address' />
-                        <div className='font-light text-black/80 max-w-[26rem] text-justify space-y-4'>
+                        <div className='font-light max-sm:text-center text-black/80 max-w-[26rem] text-justify space-y-4'>
                         <p >A link to set a new password will be sent to your email address.</p>
                         <p >Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <span className='font-medium'>privacy policy.</span></p>
                         </div>
