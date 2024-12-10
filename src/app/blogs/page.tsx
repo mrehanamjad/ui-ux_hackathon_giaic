@@ -3,7 +3,7 @@ import DeliveryServices from "@/components/DeliveryServices";
 import { BlogCardLg, BlogCardSm } from "@/components/home/BlogCard";
 import PageHero from "@/components/PageHero";
 import { Input } from "@/components/ui/input";
-import { Search } from "lucide-react";
+import { ChevronDown, Search } from "lucide-react";
 import React from "react";
 
 const blogs = [
@@ -53,6 +53,13 @@ function BlogsPage() {
       <PageHero name="Blogs" />
 
       <Container className="px-4 my-10">
+        <div className="md:hidden mt-4 mb-9 flex items-center justify-between gap-3 max-sm:flex-col">
+          <span className="flex justify-between items-center h-12 px-7 w-52  max-sm:order-2 max-sm:w-60 bg-gray-50 border border-black/60 rounded-xl tracking-widest">Categries <ChevronDown /></span>
+        <div className="relative w-fit h-fit md:hidden max-sm:order-1">
+                    <Input className="rounded-xl lg:w-80 md:w-full w-60 h-12 m-0"/>
+                    <Search className="absolute top-1/2 transform -translate-y-1/2 right-3"/>
+                </div>
+        </div>
         <div className="w-full grid md:grid-cols-3 grid-cols-1 gap-2">
           <div className="md:col-span-2 col-span-1 w-full flex flex-col gap-2 h-full">
             {blogs.map((blog, index) => (
