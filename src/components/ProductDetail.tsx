@@ -15,7 +15,7 @@ const ProductDetail = ({
   id
 }: {
   name: string;
-  price: Number;
+  price: number;
   imgSrc: string;
   description: string;
   category?: string;
@@ -135,7 +135,7 @@ const ProductDetail = ({
             <span>Tags</span>
             <span>
               {tags?.map((t) => (
-                <span>{t}, </span>
+                <span key={t}>{t}, </span>
               ))}
             </span>
             <span>Share</span>
