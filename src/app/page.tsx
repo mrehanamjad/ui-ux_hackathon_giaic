@@ -27,7 +27,7 @@ export default function Home() {
         <NewArrivals />
         <div className="h-16 w-full"></div>
 
-        <ProductSection title="Top Picks For You" description="Find a bright ideal to suit your taste with our great selection of suspension, floor and table lights." btnText="View More" >
+        <ProductSection title="Top Picks For You" description="Find a bright ideal to suit your taste with our great selection of suspension, floor and table lights." btnText="View More" btnTo="/blogs">
         <div className="flex justify-between gap-4 px-2 overflow-x-scroll w-full py-4 sm:overflow-x-auto">
               <div>
               <BlogCard  imgSrc="/blogs/Rectangle 13.png" />
