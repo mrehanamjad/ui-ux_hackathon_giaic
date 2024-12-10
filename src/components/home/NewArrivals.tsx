@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from '../ui/button'
 import Image from 'next/image'
 import Container from '../Container'
+import Link from 'next/link'
 
 function NewArrivals() {
   return (
@@ -15,7 +16,7 @@ function NewArrivals() {
             <div className='text-center '>
                 <h3 className='font-medium text-2xl mb-2'>New Arrivals</h3>
                 <h2 className='font-bold text-5xl mb-8'>Asgaard sofa</h2>
-                <Button variant={'fBtn2'} size={"f2"} className='rounded-none px-14 '>Order Now</Button>
+               <Link href={'/product/18'}> <Button variant={'fBtn2'} size={"f2"} className='rounded-none px-14 '>Order Now</Button></Link>
             </div>
         </div>
     </div>

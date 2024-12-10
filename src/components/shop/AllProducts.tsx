@@ -14,15 +14,21 @@ function AllProducts() {
             </div>
         ))}
     </div>
-    <div className='flex justify-center items-center gap-3 mt-10 mb-16'>
-        <Button size={'icon'} className='bg-[#FBEBB5] hover:bg-[#FBEBB5]/30 text-black'>1</Button>
-        <Button size={'icon'} className='bg-[#FFF9E5] hover:bg-[#FFF9E5]/50 text-black'>2</Button>
-        <Button size={'icon'} className='bg-[#FFF9E5] hover:bg-[#FFF9E5]/50 text-black'>3</Button>
-        <Button size={'icon'} className='bg-[#FFF9E5] hover:bg-[#FFF9E5]/50 text-black px-7'>Next</Button>
-    </div>
+   <PageNavigateBtns />
     </Container>
     </section>
   )
 }
 
 export default AllProducts
+
+export const PageNavigateBtns = () => {
+  return (
+    <div className='flex justify-center items-center gap-3 mt-10 mb-16'>
+    <Button size={'icon'} className='bg-[#FBEBB5] hover:bg-[#FBEBB5]/30 text-black'>1</Button>
+    <Button size={'icon'} className='bg-[#FFF9E5] hover:bg-[#FFF9E5]/50 text-black'>2</Button>
+    <Button size={'icon'} className='bg-[#FFF9E5] hover:bg-[#FFF9E5]/50 text-black'>3</Button>
+    <Button size={'icon'} className='bg-[#FFF9E5] hover:bg-[#FFF9E5]/50 text-black px-7'>Next</Button>
+</div>
+  )
+}
