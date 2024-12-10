@@ -43,7 +43,7 @@ const ProductDetail = ({
 
   return (
     <Container>
-      <div className="w-full mx-auto px-4 py-8 grid md:grid-cols-2 gap-8">
+      <div className="w-full mx-auto md:px-4 py-8 grid md:grid-cols-2 gap-8">
         {/* Image Gallery */}
         <div className="flex gap-2 w-full max-md:flex-col">
           <div className="md:order-2 p-2">
@@ -72,7 +72,7 @@ const ProductDetail = ({
         </div>
 
         {/* Product Details */}
-        <div className="space-y-6 w-80 py-5 px-5">
+        <div className="space-y-6 w-80 py-5 px-2 md:px-5">
           <div className="space-y-2">
             <h1 className="text-4xl ">{name}</h1>
             <div className="text-2xl font-mediam text-[#9F9F9F]">
@@ -127,7 +127,7 @@ const ProductDetail = ({
             </Button>
           </div>
 
-          <div className="w-96 py-9 border-t text-sm text-[#9F9F9F] border-t-black/50 grid grid-cols-2 gap-2">
+          <div className="md:w-96 w-full py-9 border-t text-sm text-[#9F9F9F] border-t-black/50 grid grid-cols-2 gap-2">
             <span>SKU </span>
             <span>: SS00{id}</span>
             <span>Category</span>
