@@ -33,10 +33,10 @@ const Header = () => {
           Shop
         </Link>
         <Link
-          href="/about"
+          href="/blogs"
           className="text-gray-800 hover:text-black transition p-1"
         >
-          About
+          Blogs
         </Link>
         <Link
           href="/contact"
@@ -175,11 +175,11 @@ export const MobileSidebar = ({isOpen,toggleSidebar}:{isOpen:boolean;toggleSideb
             Shop
           </Link>
           <Link
-            href="/about"
+            href="/blogs"
             className="text-gray-800 hover:text-black transition p-1"
             onClick={toggleSidebar}
           >
-            About
+            Blogs
           </Link>
           <Link
             href="/contact"
