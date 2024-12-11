@@ -2,6 +2,7 @@ import Container from "@/components/Container";
 import DeliveryServices from "@/components/DeliveryServices";
 import { BlogCardLg, BlogCardSm } from "@/components/home/BlogCard";
 import PageHero from "@/components/PageHero";
+import { PageNavigateBtns } from "@/components/shop/AllProducts";
 import { Input } from "@/components/ui/input";
 import { ChevronDown, Search } from "lucide-react";
 import React from "react";
@@ -65,6 +66,7 @@ function BlogsPage() {
             {blogs.map((blog, index) => (
               <BlogCardLg key={index} {...blog} />
             ))}
+                    <PageNavigateBtns className="mb-3 mt-5" />
           </div>
           <div className="col-span-1 w-full h-full py-5">
             <div className="flex flex-col items-center gap-10">
@@ -90,7 +92,6 @@ function BlogsPage() {
                         ))}
                     </div>
                 </div>
-
 
             </div>
           </div>

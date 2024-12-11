@@ -22,9 +22,9 @@ function AllProducts() {
 
 export default AllProducts
 
-export const PageNavigateBtns = () => {
+export const PageNavigateBtns = ({className=""}:{className?:string}) => {
   return (
-    <div className='flex justify-center items-center gap-3 mt-10 mb-16'>
+    <div className={`flex justify-center items-center gap-3 mt-10 mb-16 ${className}`}>
     <Button size={'icon'} className='bg-[#FBEBB5] hover:bg-[#FBEBB5]/30 text-black'>1</Button>
     <Button size={'icon'} className='bg-[#FFF9E5] hover:bg-[#FFF9E5]/50 text-black'>2</Button>
     <Button size={'icon'} className='bg-[#FFF9E5] hover:bg-[#FFF9E5]/50 text-black'>3</Button>
