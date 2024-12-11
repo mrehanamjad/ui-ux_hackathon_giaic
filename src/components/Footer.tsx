@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from './ui/button';
 import Container from './Container';
+import Link from 'next/link';
 
 const Footer = () => {
 
@@ -25,16 +26,16 @@ const Footer = () => {
           <h4 className="font-semibold mb-4 text-gray-400">Links</h4>
           <ul className="space-y-2">
             <li className="flex items-center">
-              <a href="/" className="text-black hover:text-gray-600">Home</a>
+              <Link href="/" className="text-black hover:text-gray-600">Home</Link>
             </li>
             <li className="flex items-center">
-              <a href="/shop" className="text-black hover:text-gray-600">Shop</a>
+              <Link href="/shop" className="text-black hover:text-gray-600">Shop</Link>
             </li>
             <li className="flex items-center">
-              <a href="/about" className="text-black hover:text-gray-600">About</a>
+              <Link href="/blogs" className="text-black hover:text-gray-600">Blogs</Link>
             </li>
             <li className="flex items-center">
-              <a href="/contact" className="text-black hover:text-gray-600">Contact</a>
+              <Link href="/contact" className="text-black hover:text-gray-600">Contact</Link>
             </li>
           </ul>
         </div>
@@ -43,9 +44,9 @@ const Footer = () => {
         <div>
           <h4 className="font-semibold mb-4 text-gray-400">Help</h4>
           <ul className="space-y-2">
-            <li><a href="/payment" className="text-black hover:text-gray-600">Payment Options</a></li>
-            <li><a href="/returns" className="text-black hover:text-gray-600">Returns</a></li>
-            <li><a href="/privacy" className="text-black hover:text-gray-600">Privacy Policies</a></li>
+            <li><Link href="/" className="text-black hover:text-gray-600">Payment Options</Link></li>
+            <li><Link href="/" className="text-black hover:text-gray-600">Returns</Link></li>
+            <li><Link href="/" className="text-black hover:text-gray-600">Privacy Policies</Link></li>
           </ul>
         </div>
 
