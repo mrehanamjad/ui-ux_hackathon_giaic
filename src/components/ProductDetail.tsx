@@ -72,7 +72,7 @@ const ProductDetail = ({
         </div>
 
         {/* Product Details */}
-        <div className="space-y-6 w-80 py-5 px-2 md:px-5">
+        <div className="space-y-6 md:w-80 w-11/12 max-md:mr-auto py-5 px-2 md:px-5">
           <div className="space-y-2">
             <h1 className="text-4xl ">{name}</h1>
             <div className="text-2xl font-mediam text-[#9F9F9F]">
@@ -133,7 +133,7 @@ const ProductDetail = ({
             <span>Category</span>
             <span>: {category}</span>
             <span>Tags</span>
-            <span>
+            <span>:&nbsp;
               {tags?.map((t) => (
                 <span key={t}>{t}, </span>
               ))}
