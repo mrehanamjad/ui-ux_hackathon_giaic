@@ -17,9 +17,11 @@ function myAccount() {
                         <div className="flex flex-col gap-9">
                         <Input 
                             label='Username or email address'
+                            type='email'
                         />
                         <Input 
-                            label='Username or email address'
+                            label='Password'
+                            type='password'
                         />
                         <label htmlFor='r-me' className='flex items-center gap-4'> <Checkbox id={"r-me"} /> Remember me</label>
                         </div>
