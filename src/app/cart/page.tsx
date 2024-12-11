@@ -16,7 +16,7 @@ function CartPage() {
           <div className="lg:col-span-2 col-span-1 h-full w-full">
             <CartTable />
           </div>
-          <div className="col-span-1 bg-[#FFF9E5] h-full flex justify-center items-center flex-col gap-9 max-lg:py-5 max-lg:my-6 w-full">
+          <div className="container mx-auto col-span-1 bg-[#FFF9E5] h-full flex justify-center items-center flex-col gap-9 max-lg:py-5 max-lg:my-6 w-full">
             <h2 className="font-semibold text-3xl mb-4">Cart Totals</h2>
             <div className="grid grid-cols-3  gap-6">
                 <span className="font-medium col-span-1">Subtotal</span><span className="text-[#9F9F9F] col-span-2">Rs. 250,000.00</span>
