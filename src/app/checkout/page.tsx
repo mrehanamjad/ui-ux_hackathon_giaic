@@ -4,6 +4,7 @@ import PageHero from "@/components/PageHero";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Dot } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 function page() {
@@ -58,7 +59,7 @@ function page() {
               <label htmlFor="cash" className="font-medium text-[#9F9F9F]"><input type="radio" id="cash" /> Cash On Delivery</label>
               </div>
               <p className="font-extralight text-black/80">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <span className='font-semibold text-black'>privacy policy.</span></p>
-              <Button variant={'fBtn2'} size={'f2'} className='w-3/5 mx-auto mt-7'>Place Order</Button>
+              <Link href={'/'}><Button variant={'fBtn2'} size={'f2'} className='w-3/5 mx-auto mt-7'>Place Order</Button></Link>
             </div>
           </div>
         </div>

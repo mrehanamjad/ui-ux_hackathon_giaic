@@ -5,6 +5,7 @@ import DeliveryServices from "@/components/DeliveryServices";
 import PageHero from "@/components/PageHero";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 function CartPage() {
   return (
@@ -21,7 +22,8 @@ function CartPage() {
                 <span className="font-medium col-span-1">Subtotal</span><span className="text-[#9F9F9F] col-span-2">Rs. 250,000.00</span>
                 <span className="font-medium col-span-1">Total</span><span className="text-[#B88E2F] text-xl col-span-2">Rs. 250,000.00</span>
             </div>
-            <Button variant={"fBtn2"} size={'f2'}>Check Out</Button>
+            <Link href="/checkout">
+            <Button variant={"fBtn2"} size={'f2'}>Check Out</Button></Link>
           </div>
         </div>
       </Container>

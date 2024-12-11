@@ -11,7 +11,7 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ imgSrc, name, price,id }) => {
   return (
-    <Link href={`/product/${id}`}>
+    <Link href={`/shop/${id}`}>
     <div className="w-[17.938rem] h-96 p-4 bg-white hover:bg-[#FAF4F4] flex flex-col cursor-pointer">
       <Image src={imgSrc} alt={name} width={287} height={287} className="flex-1" />
       <p className="mt-4 text-black/80 h-[3rem] line-clamp-2 overflow-hidden">{name}</p>
